@@ -1,0 +1,24 @@
+a) mkdir -p acc02g/bokor/{banan,mogyoro,barack}; mkdir -p acc02g/fa/korte; mkdir -p acc02g/land/{szeder,kokus}
+b) cp -r acc02g/land/szeder/ acc02g/fa/; cp -r acc02g/bokor/banan/ acc02g/fa/
+c) mv acc02g/bokor/barack/ acc02g/fa/; mv acc02g/land/kokus/ acc02g/fa/
+d) rm -r acc02g/land/; mkdir -p acc02g/tree; touch acc02g/bokor/banan/leiras.txt acc02g/tree/felsorolas.txt
+e) cat > acc02g/bokor/banan/leiras.txt 
+A barack egy gyümölcs
+A barack ehető.
+A barack finom.
+^D
+cat > acc02g/tree/felsorolas.txt 
+Adamcsik Bendegúz
+Asztalos Ádám
+Baba Levente
+Balogh Botond
+Balogh Dominik
+Balogh Márk
+Balogh Martin
+Bán Tamás József
+^D
+f) ls -R acc02g
+g) cd /; find / -type f -name '?e*'
+h) chmod a+r acc02g/tree/felsorolas.txt
+i) du -sh acc02g
+j) sort acc02g/tree/felsorolas.txt
