@@ -1,0 +1,132 @@
+@font-face {
+	font-family: "MainFont";
+	src: local("URW Gothic"), url("/fonts/URWGothic-Book.otf");
+}
+
+@font-face {
+	font-family: "MainFont";
+	src: local("URW Gothic"), url("/fonts/URWGothic-Demi.otf");
+	font-weight: bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "MainFont", Helvetica, sans-serif;
+}
+
+h2, p {
+	margin-bottom: 8pt;
+}
+
+h2 {
+	margin-top: 8pt;
+}
+
+a {
+	text-decoration: none;
+}
+
+#non-footer-content {
+	min-height: calc(100vh - 7em);
+}
+
+nav {
+	width: 100%;
+	background-color: black;
+	border-bottom: 4pt solid green;
+	user-select: none;
+}
+
+header {
+	height: 5cm;
+	width: 100%;
+	background: center/cover url("/imgs/header.jpg");
+	display: flex;
+	justify-content: left;
+	align-items: flex-end;
+	font-size: 32pt;
+	color: white;
+}
+
+header > div {
+	background-color: rgba(0, 0, 0, 75%);
+	padding: .5em;
+}
+
+nav > a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 1em;
+	color: white;
+	background-color: black;
+	margin: 0;
+	transition: background-color 300ms ease;
+}
+
+nav > a:hover {
+	background-color: #0f0f0f;
+}
+
+main {
+	max-width: 500pt;
+	margin: 0 auto;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	padding: 1em;
+	box-sizing: border-box;
+}
+
+#tárgyak {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+#tárgyak > a > h2 {
+	margin: 0;
+	padding: .5em 1em;
+	width: 7cm;
+	box-sizing: border-box;
+}
+
+.tárgy-background {
+	height: 5cm;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+	border-bottom-left-radius: calc(.5em - 2pt);
+	border-bottom-right-radius: calc(.5em - 2pt);
+}
+
+#tárgyak > a {
+	max-width: 7cm;
+	border: 2pt solid black;
+	border-radius: .5em;
+	margin: 1em 2em;
+	box-shadow: 1pt 1pt 4pt;
+	color: initial;
+	text-decoration: initial;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: end;
+}
+
+#tárgyak > a {
+	width: 99cm;
+}
+
+video {
+	width: 100%;
+	margin-bottom: 8pt;
+}
+
+footer {
+	box-sizing: border-box;
+	text-align: center;
+	background: #eeeeee;
+	padding-top: 2em;
+	height: 7em;
+}

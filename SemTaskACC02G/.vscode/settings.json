@@ -1,0 +1,19 @@
+{
+	"spellright.language": [
+		"hu_HU"
+	],
+	"spellright.documentTypes": [
+		"markdown",
+		"latex",
+		"plaintext",
+		"html"
+	],
+	"spellright.parserByClass": {
+		"typst": {
+			"parser": "code"
+		}
+	},
+	"cSpell.enableFiletypes": [
+		"typst"
+	]
+}
